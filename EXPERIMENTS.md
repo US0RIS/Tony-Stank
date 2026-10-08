@@ -46,3 +46,14 @@ Extend `sims/isl.py` to 3D. Search (BFS / A*) for move sequences between small c
 
 ## Already executed this session (computational)
 - S1–S7, listed in RESULTS.md. All are reproducible with `python3 -m pytest -q tests` and `python3 sims/<name>.py`.
+
+## Session-2 re-ranking (after AUDIT.md)
+
+| Rank | ID | Track | Question | Kills if… |
+|---|---|---|---|---|
+| 1 | E1′ | A/B | Face-drive coupon: sealed dry N₂ vs lab air with seeded 0.3/1/3 µm particles | Sealed thrust < 3 kPa (kills Track A drive). Open-air thrust ≥ 2 kPa would *refute* AUDIT N11. |
+| 2 | E6 | A | Port-engaged cam latch at 10 mm, then 1 mm: locked interface shear and unlocked drag | Locked < 100 kPa, or unlocked drag > 1 kPa |
+| 3 | E3 | A | Interlock pull-out and wear (unchanged); add clearance c = 6/8/10σ jam test vs AUDIT 3 C Monte Carlo | Jam rate exceeds Monte Carlo by > 10× (model missing friction/tilt) |
+| 4 | E7 | B | Bolt latch at 1 mm and 100 µm: strength, unloaded actuation force, capture range under face-drive positioning | Strength < 1 MPa equivalent, or actuation > 1 µN at 100 µm |
+| 5 | E8 | B | Compliant-electrode face drive under particle challenge | No conformal design keeps ≥ 2 kPa with a 3 µm particle |
+| 6 | E5 | A | 10 mm ISL-PE prototype (now including cam latches, wiper seal, slab feed) | As before, plus 0.5 N tip load without slip |

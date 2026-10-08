@@ -9,7 +9,27 @@
 
 Module sizes 10 mm → 1 mm → 100 µm → 10 µm are analysed throughout.
 
-## Current findings (2026-10-08, session 1)
+## Session 2 audit — read this first ([AUDIT.md](AUDIT.md), [TRACKS.md](TRACKS.md))
+
+Evidence classes: MATH = derivation or proof · NUM = simulation · EXP = experiment. **No experiments have been done in this project.**
+
+1. **Face motor, revised.**
+   - A realistic dielectric stack gives **5.7 kPa** (not ~7) (NUM).
+   - The 50 V / 1 µm design is at the micro-gap breakdown limit and must be derated to ~2.1 kPa (NUM, plus unverified literature).
+   - **New flaw:** thrust ∝ exp(−k·d_particle). One 0.3 µm particle removes 98 % of the 5 V design's thrust (MATH). No open-air operating point is simultaneously breakdown-safe, particle-tolerant and above ~1–2 kPa, so **electrostatic sliding needs a sealed volume**.
+   - Step energy is 15–40 nJ, not 4. The sliding size floor is ~22–37 µm, not 10–20.
+2. **Power claim is false in general.** "Drop depends only on height" holds only for uniform load, a full footprint and an ideal garment. Real geometry factors are 1–10×, and a separate return conductor doubles the drop (NUM). Width provides redundancy.
+3. **ISL-PE is kinematically sound and reversible, but session 1 overstated it.**
+   - Confirmed: 3D slab-feed extrusion is legal (NUM). **Every ISL shape change is exactly reversible** (MATH proof + NUM).
+   - **New flaw:** every interface is a slip plane, so a 1 cm rod slips plastically above ~0.7 N (MATH). The proposed fix, port-engaged cam latches, is untested.
+   - Jamming needs clearance ≳ 10σ (NUM).
+   - Build time was wrong: about 150 s for a 10 cm rod, not 60 s (MATH).
+   - **Branching is possible:** search found a 6-module horizontal cantilever in 13 legal moves (NUM).
+4. **Two tracks** ([TRACKS.md](TRACKS.md)).
+   - Track A: revised ISL-PE (sealed magazine, port wiper seals, cam latches, extend-then-lock).
+   - Track B: nine quantified breakthroughs. The deepest is **B3: particle-tolerant actuation in open air**. The proposed target architecture is a Switchable-Interlock Sliding Lattice (ISL with retractable bolts, whose MPa strength is independent of module size, MATH).
+
+## Session 1 findings (superseded where the audit above disagrees)
 
 Tags: DERIVED = analytic · SIMULATED = code in `sims/` · HYPOTHETICAL = proposed design, untested.
 
@@ -41,6 +61,8 @@ Tags: DERIVED = analytic · SIMULATED = code in `sims/` · HYPOTHETICAL = propos
 
 | File | Contents |
 |---|---|
+| [AUDIT.md](AUDIT.md) | Session-2 audit of the three key claims and the generalisation study |
+| [TRACKS.md](TRACKS.md) | Track A (prototype path) and Track B (breakthroughs required) |
 | [LITERATURE.md](LITERATURE.md) | Sources with explicit verification status. Full-text access was blocked this session. |
 | [PHYSICS.md](PHYSICS.md) | Equations, scaling laws, assumptions |
 | [ARCHITECTURES.md](ARCHITECTURES.md) | Mechanism screening; Architecture A vs ISL-PE |
@@ -48,7 +70,8 @@ Tags: DERIVED = analytic · SIMULATED = code in `sims/` · HYPOTHETICAL = propos
 | [EXPERIMENTS.md](EXPERIMENTS.md) | Ranked falsification tests E1–E5, S-E6 |
 | [RESULTS.md](RESULTS.md) | Numerical results and reproduction steps |
 | [ROADMAP.md](ROADMAP.md) | Phased path to a first prototype |
-| `sims/` | `scaling.py`, `face_motor.py`, `power_network.py`, `structure.py`, `isl.py`, `budget.py` |
+| `sims/` | `scaling.py`, `face_motor.py`, `power_network.py`, `structure.py`, `isl.py`, `budget.py`, `track_b.py` |
+| `sims/audit/` | `face_motor_realistic.py`, `power_audit.py`, `isl3d.py`, `isl_audit.py`, `branch_probe.py` |
 | `results/` | Generated outputs (markdown tables) |
 | `tests/` | Regression and independent-check tests (`python3 -m pytest -q tests`) |
 

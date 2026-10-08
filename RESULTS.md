@@ -11,6 +11,13 @@ for s in scaling face_motor power_network structure isl budget; do python3 sims/
 
 Runtime is about 15 s in total. The models are deterministic; the S6 random test uses seed = 1.
 
+> **Session 2:** S2, S3 and S7 below are partly superseded by [AUDIT.md](AUDIT.md). Audit scripts are in `sims/audit/`, outputs in `results/audit_*.md`, and Track B requirements in `results/track_b.md`. The test suite now has 9 tests.
+>
+> Retracted or revised:
+> - S2: ~7 kPa → 5.7 kPa; open-air particle sensitivity added.
+> - S3: "height-only" is valid only for the ideal case.
+> - S7: 4 nJ per step → 15–40 nJ. "60 s per 10 cm rod" → ~150 s with a thick-slab feed.
+
 ## S1 — Force scaling (`results/scaling_table.md`, DERIVED)
 
 - **Below 1 mm, interface forces dominate.** A 10 V thin-film electrostatic clamp exceeds weight by 8.6×10⁵ at 100 µm. Capillary force exceeds weight by 2×10³.

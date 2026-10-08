@@ -19,3 +19,6 @@
 
 ## What a first wearable demo honestly looks like
 A cuff or forearm patch holding a sealed magazine of 1 mm interlocking blocks. A port array extrudes a 5–10 cm rigid rod or blade on a gesture command in a few seconds, and retracts it again. It is genuinely physical and load-bearing, with no illusion involved. It is not yet "invisible clothing" (blocks of 1 mm are visible), and the shape class is limited to extrusions.
+
+## Session-2 update
+The roadmap above is now **Track A**. Phase 3 must start with E1′ (sealed vs open-air face drive with particles), and Phase 1 must include cam latches (E6). **Track B** runs in parallel, with its own gates E7 (bolt latch) and E8 (compliant electrodes): see TRACKS.md. Track B is not deferred: E7 and E8 share fabrication runs with Track A's Phase 3 coupons.

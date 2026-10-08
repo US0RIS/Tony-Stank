@@ -93,3 +93,9 @@ EXPERIMENTS E1 (face-drive coupon), E3 (interlock strength + wear + particle cha
 2. Pursue **ISL-PE at 1 mm first**, then 100 µm. It is the simplest architecture found that meets requirements A–G at once.
 3. The garment becomes a **magazine plus port array**: an addressable, two-dimensional, rigid-chain actuator built from identical microscale blocks.
 4. **What this gives up:** arbitrary 3D shapes. Universality of the ISL rule set (with branching ports, or columns re-entering ports) is an open computational question (EXPERIMENTS S-E6).
+
+## 5. Session-2 status (AUDIT.md, TRACKS.md)
+
+- **ISL-PE is retained as the Track A candidate.** It needs four revisions: thick-slab feed from a sealed magazine, rod-wiper seals at ports, port-engaged cam latches against slip planes, and extend-then-lock operation.
+- Kinematics are confirmed in 3D, reversibility is proven, and branching is found to be possible.
+- **Architecture A (universal crawler) is not abandoned.** It is reformulated as the Track B target, SISL: ISL faces plus retractable bolts plus neighbour-actuated transit. Its blockers are B2 (bolt actuation below 100 µm) and B3 (particle-tolerant open-air actuation).

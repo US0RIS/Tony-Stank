@@ -57,7 +57,7 @@ Consequence: below about 1 mm, weight is irrelevant. The design is controlled by
 ## 3. Power through contact lattices (SIMULATED nodal solve, `sims/power_network.py`)
 
 - **Chain.** ΔV = I·R·h(h+1)/2, reproduced exactly by the solver.
-- **Uniform 3D block on the garment.** Columns are electrically independent, so ΔV depends only on the height h in hops, not on width (SIMULATED for w = 1, 5, 20).
+- **Uniform 3D block on the garment.** Columns are electrically independent, so ΔV depends only on the height h in hops, not on width (SIMULATED for w = 1, 5, 20). **AUDIT (session 2): this holds only for uniform load, a full footprint and an ideal garment. In general ΔV ≈ 2G·IRh(h+1)/2 with G ≈ 1–10. See AUDIT.md Claim 2.**
 - **Root-fed horizontal arm.** It behaves exactly like a single chain of the same length: the cross-section cancels.
 - **Electrical reach:** h_max ≈ √(0.2·V_bus² / (P_m·R_c)). Physical reach = h_max·L.
   - Ohmic contact, 1 Ω, 1 µW, 3 V: 13 cm at L = 100 µm.

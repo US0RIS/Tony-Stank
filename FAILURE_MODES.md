@@ -48,3 +48,21 @@
 ## 5. Yield (DERIVED)
 
 If every module must be active and functional, a column of 1000 modules at 99 % per-die yield has a 0.99¹⁰⁰⁰ ≈ 4×10⁻⁵ chance of being defect-free. **Fully active homogeneous swarms are not manufacturable without fault tolerance.** ISL-PE helps because column modules are passive passengers: a non-functional module is carried, not fatal. Only port and sleeve drivers need to work, and they can be tested and replaced at the garment level.
+
+## 6. Session-2 audit additions (see AUDIT.md)
+
+| # | Result | Class |
+|---|---|---|
+| N11 | Rigid electrostatic sliding faces are not particle tolerant: thrust ∝ exp(−k·d). No open-air operating point is simultaneously breakdown-safe, tolerant of µm particles, and above ~1–2 kPa. | MATH |
+| N12 | The 50 V / 1 µm face drive sits inside the measured micro-gap breakdown band. Derate to ~30 V (2.1 kPa). | NUM + literature (unverified) |
+| N13 | In ISL, every interface is a slip plane. Without mechanical shear locks, structures slip above ~1.5 F/A ≈ 10 kPa (≈ 0.7 N on a 1 cm rod). | MATH |
+| N14 | The S3 "height-only" law fails for narrow footprints (×2.8–8.8), hotspots (×2–6), resistive garments (×3) and failed contacts (×1.2–9.7). | NUM |
+| N15 | Self-powered convex transitions are infeasible below ~100 µm. Neighbour-actuated passive transit is required. | MATH |
+| N16 | Bolt actuation at 5 V does not fit below ~100 µm (comb area > face area). | MATH |
+
+**Retracted:** S7's 60 s build time (now ~150 s with thick-slab feed); S2's ~7 kPa (now 5.7 kPa); 4 nJ per step (now 15–40 nJ).
+
+**Strengthened:**
+- Every ISL shape change is reversible (MATH proof).
+- Extrusion is legal in 3D (NUM).
+- ISL can form cantilever branches (NUM).
