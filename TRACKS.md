@@ -56,3 +56,28 @@ Each requirement below is a quantitative target derived in `sims/track_b.py`, AU
 **Most decisive Track B experiments:**
 - **E7:** bolt latch at 1 mm and 100 µm. Strength, actuation force, and alignment capture range when guided by a synchronous face drive, whose positioning resolution is a fraction of the pitch.
 - **E8:** compliant-electrode face drive under particle challenge. This directly attacks B3, the deepest blocker.
+
+---
+
+## Session-3 revision
+
+**Track B now has a concrete leading architecture: NEPL** (NEW_MECHANISMS.md).
+- It answers B1/B7 (switchable attachment plus pin shear), B3 in part (particle-tolerant attachment, linear degradation), and B5 (passive mover, no power needed in transit).
+- B2 is reformulated: bolt actuation is no longer needed, because pins work with pivots.
+- B3 for locomotion is answered by **removing sliding**: there is no exponential gap sensitivity in rolling pivots.
+- New gating item, **B10: a microfabricated switchable (semi-hard) magnet film plus pulsed microcoils.** This is the single most decisive open question; experiment E9.
+- Scale window: credible 300 µm–1 mm; marginal 100 µm (180° pivot margin 2.0 after a ×0.5 3D derate); infeasible at ≤ 30 µm.
+- **The ≤ 100 µm goal therefore needs adhesion reduction or a stronger force mechanism.** Margin ∝ L² against adhesion.
+
+**Track A stays ISL-PE**, with three changes:
+- ISL-PE is not the final architecture. Its shape space is 19 states versus about 62,000 for NEPL/SISL in the common test.
+- New risk E13: sliding wear (~10⁵ cycles in air for bare polysilicon, snippet).
+- Proposed hybrid: ISL-PE ports deliver bulk material, and NEPL surface modules form branches, cavities and joints. This lets the Track-A hardware feed Track B.
+
+**Shortest path to a demonstrable general-reconfiguration prototype (new):**
+1. 10 mm NEPL blocks using macro EPMs (Kubits-class) in passive-mover mode, with pins and pole-piece contacts. Demonstrate a TOWER-ARM ↔ ARCH transformation (9 moves each way, already planned in `s3_cycle_compare.md`) while every module stays powered.
+2. E9 at 1 mm.
+3. 1 mm NEPL blocks.
+4. 300 µm.
+
+Each step is falsifiable by E10 and E12.

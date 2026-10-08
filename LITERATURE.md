@@ -76,3 +76,27 @@ No row in this file is VERIFIED in the strong sense (number checked against the 
 - **Multiphase electrode arrays on both bodies producing thrust**: prior art (DEMED, about 1995).
 - **A sliding module that keeps its connection during the move**: prior art as a goal (Datom, DILI).
 - **Combination proposed here**: DEMED-type drive between faces of adjacent sub-mm modules, phase-controlled to give near-zero net normal force, with all tension carried by permanent undercut interlocks, and growth by extrusion through ports in a garment layer. The searches above did not find this combination. That is weak evidence of novelty, because full-text search was blocked. **Do not claim novelty until a patent search (CPC B25J 9/08, H02N 1/00) and a full-text review are done.**
+
+## 7. Session-3 additions (four subagents + lead; full text blocked again, so everything is SNIPPET unless noted)
+
+| Item | Value | Source |
+|---|---|---|
+| Sputtered NdFeB thick films (Dempsey) | Br ≈ 1.3–1.4 T, Hc ≈ 1.6–2 T, ≤ 50 µm, ≥ 650 °C anneal | arXiv cond-mat/0703785 |
+| Electroplated CoPt (Arnold, UF) | Hc ≤ 850–1000 kA/m, Br ≤ 0.8 T, ≤ 100 µm | UF IMG listing |
+| Parylene-bonded NdFeB | Br 0.69 T | doi:10.1109/MEMSYS.2012.6170220 |
+| CoPtP pulse-reverse plating | Hc 268 kA/m, Br 0.4 T | cora.ucc.ie/handle/10468/7756 |
+| Microcoil failure (150–300 µm OD) | 3600 A/mm² max, 610 A/mm² safe (unit conflict in source) | ebuah.uah.es/dspace/handle/10017/64267 |
+| Knaian EPM thesis | Title confirmed; numbers not obtained | dspace.mit.edu/handle/1721.1/60151 |
+| Kubits (EPM pivoting cubes, 25 mm) | prior art for magnetic pivoting | doi:10.1109/LRA.2020.3013884 |
+| Milli-Motein | 1 cm, EPM wobble motor, 2.6 W, holds shape unpowered | MIT News 2012 |
+| Moteins universality | Cheung, Demaine, Bachrach, Griffith, IEEE T-RO 27(4):718–729, 2011, doi:10.1109/TRO.2011.2132951 | VERIFIED-META |
+| ARMADAS | Gregg et al., Science Robotics 9(86) 2024, doi:10.1126/scirobotics.adi2746; 256 voxels in 4.2 days | NASA NTRS 20230005194 |
+| Hybrid programmable matter: one active agent suffices in 3D | Hinnenthal, Rudolph, Scheideler | arXiv 2401.17734 |
+| Hybrid-model algorithms for targets with holes | Friemel, Liedtke, Scheffer | arXiv 2501.08663 |
+| Polysilicon sidewall wear in air | 3 of 7 failed at ~10⁵ cycles; μ 0.11 → 0.20 | lbl.gov/ritchie MEMS wear page |
+| Sandia microengine wear and humidity | wear-dominated; debris rises at low RH | osti.gov/biblio/3325 |
+| Polyimide hinge fatigue | 7×10⁴ (RoboBee) to 3×10⁵ cycles | smrl.mit.edu iros14_malka.pdf; par.nsf.gov 10567610 |
+| Si snap fastener insertion | ~30 µN (50×2 µm beams) | UW MEMS ASME-IMECE 1995 |
+| Indoor microfibre deposition | ~1960 fibres/m²/day | Front. Built Environ. 2025 (doi 10.3389/fbuil.2025.1556698) |
+| Hot-switched Au–Pt contact degradation in air | rose after ~100 cycles; N₂ much better | Sandia 2005 publication page |
+| **Not found** | microfabricated semi-hard switchable magnet films; pulsed microcoil limits; MEMS latch mating-cycle life; size-resolved particle deposition flux | — |

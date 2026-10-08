@@ -66,3 +66,18 @@ If every module must be active and functional, a column of 1000 modules at 99 % 
 - Every ISL shape change is reversible (MATH proof).
 - Extrusion is legal in 3D (NUM).
 - ISL can form cantilever branches (NUM).
+
+## 7. Session-3 updates
+
+**Retracted:** N1 ("EPMs cannot be switched by onboard coils at ≤ 100 µm"). With poles ≤ 50 µm and 1 µs pulses, switching costs about 36 nJ per pole with ΔT ≈ 2 K at Hc = 20 kA/m (MATH). The constraint becomes the existence of a microfabricated semi-hard film, which was not found in the literature.
+
+| # | Result | Class |
+|---|---|---|
+| N17 | Neighbour-coil Lorentz drive of permanent-magnet movers fails in magnetised lattices: coil force is 4–11 % of magnet–magnet forces | MATH |
+| N18 | Sliding magnetic reluctance stepping is friction-locked (τ/p ≤ 0.19 < μ) | NUM |
+| N19 | Rigid electrostatic zipping cannot drive a 90° fold or pivot against adhesion (torque/peel < 0.04) | MATH |
+| N20 | Sliding-contact life in air ~10⁵ cycles (polysilicon, SNIPPET): a threat to ISL-PE and SISL | Literature |
+| N21 | Convex transitions are most of the moves in a representative transformation (4 of 6). Sliding face drives cannot execute them. | NUM |
+| N22 | Anchored chains form only Hamiltonian-path shapes: 26 % of single-component shapes at N = 8 | NUM + topology |
+| N23 | NEPL pivots fail below ~30–50 µm (margin ∝ L² against adhesion) | NUM |
+| N24 | Magnets attract ferrous debris (magnitude untested) | SPECULATION |

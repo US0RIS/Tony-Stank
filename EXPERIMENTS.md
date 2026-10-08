@@ -57,3 +57,19 @@ Extend `sims/isl.py` to 3D. Search (BFS / A*) for move sequences between small c
 | 4 | E7 | B | Bolt latch at 1 mm and 100 µm: strength, unloaded actuation force, capture range under face-drive positioning | Strength < 1 MPa equivalent, or actuation > 1 µN at 100 µm |
 | 5 | E8 | B | Compliant-electrode face drive under particle challenge | No conformal design keeps ≥ 2 kPa with a 3 µm particle |
 | 6 | E5 | A | 10 mm ISL-PE prototype (now including cam latches, wiper seal, slab feed) | As before, plus 0.5 N tip load without slip |
+
+## Session-3 priorities (supersede earlier rankings where they conflict)
+
+| Rank | ID | Track | Question | Kill / success criterion | Cost |
+|---|---|---|---|---|---|
+| 1 | **E9** | B (and A option) | Can a microfabricated EPM face switch and hold? 1 mm, then 300 µm. Semi-hard film + sputtered NdFeB + NiFe pole pieces + Cu coil. | **Kill** if no film with Br ≥ 0.5 T switches reliably at Hc ≤ 20 kA/m with ≤ 1 µs pulses at J ≤ 2×10¹⁰ A/m² and ΔT < 50 K. **Success:** ≥ 80 kPa on, < 5 kPa off, ≥ 10⁶ switches. | months; magnet-capable cleanroom |
+| 2 | **E10** | B | Push–pull pivot torque profile. Three EPM-faced 1 mm blocks on a torsion pendulum; measure torque vs angle for 90° and 180° pivots, and the hinge reaction. | **Kill** if the measured minimum torque is < 30 % of `mag_pivot.py`, or if the hinge must hold > 3× the predicted force | weeks, after E9, or with macro EPMs at 10 mm first |
+| 3 | **E11** | B | Contaminant tolerance of magnetic attachment vs electrostatic. Spacers 0/1/5/15 µm and lint fibres between EPM faces and between face-drive coupons. | Confirms or refutes linear (M5) vs exponential (AUDIT N11) degradation | days |
+| 4 | **E12** | B | Landing durability. 10⁶ pivot landings of 1 mm Si blocks with conical pins at the predicted ~2 m/s, with and without reverse-pulse braking. | **Kill** if pin chipping or contact-resistance drift > 10× before 10⁵ landings | weeks |
+| 5 | E1′ | A | Sealed vs open-air face drive (unchanged) | — | — |
+| 6 | E6 | A | Port-engaged cam latch (unchanged) | — | — |
+| 7 | **E13** | A/B | Sliding-contact wear of ISL rails with DLC/W/SAM coatings vs bare Si in lab air | **Kill** for sliding architectures if life < 10⁶ cycles with every coating (LITERATURE-SNIPPET: ~10⁵ bare polysilicon) | weeks |
+
+**Single next decisive experiment: E9 at 1 mm.** It is the gate for the strongest surviving architecture, and it is a materials question that no simulation can answer.
+
+A macro precursor needs no microfabrication and can start immediately: 10 mm EPM-faced cubes (Kubits-class parts) run in the **neighbour-driven passive-mover** mode with pins, measuring E10's torque profile and E12's landing durability.

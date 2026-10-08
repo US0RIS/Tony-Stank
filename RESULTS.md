@@ -70,3 +70,20 @@ Runtime is about 15 s in total. The models are deterministic; the S6 random test
 
 - Nothing here demonstrates manufacturability, wear life, tolerance to particles, or a real fringing-field geometry.
 - All literature numbers are snippet-level (see LITERATURE.md).
+
+## Session 3 results (reproduce: `python3 sims/s3/<name>.py`; outputs in `results/s3_*.md`)
+
+| Result | Class | File |
+|---|---|---|
+| Lorentz drive of permanent-magnet movers by neighbour coils: 0.1–1.7 kPa at ~40 µJ/step (100 µm); coil/PM field ratio 0.04–0.11 at all sizes ≤ 10 mm → rejected for lattices | MATH | s3_magnetic.md (M1, M2) |
+| EPM switching at ≤ 50 µm poles, 1 µs: 36 nJ per pole (Hc 20 kA/m), ΔT ≈ 2 K → **retracts session-1 N1** ("EPM impossible below 1 mm"); material-limited instead | MATH | s3_magnetic.md (M3) |
+| EPM reluctance stepper with sliding faces: τ/p = 0.14–0.19 (ratio mesh-converged at 0.10 at fixed offset) → friction-locked for μ ≥ 0.2 | NUM | s3_magnetic.md (M4) |
+| Magnetic attachment degrades linearly with particle gap (≈ 62 kPa of 98 kPa with a 5 µm particle at 100 µm, derated) | MATH | s3_magnetic.md (M5), s3_nepl_design.md |
+| Neighbour-driven push–pull EPM pivot: 2D torque margins 180/73/8.9/0.1 (90°) and 80/32/4.0/0.0 (180°) at 1 mm/300/100/10 µm; hinge load 112–125 µN at 100 µm. Model validated against the contact limit (0.94) and discretisation (2.3 %). | NUM | s3_mag_pivot.md |
+| Mechanical screen: rigid zipping torque/peel < 0.04 at 90°; inchworm margin 0.07 at 100 µm (30 V); capillary rejected; sliding wear ~10⁵ cycles (SNIPPET) | MATH | s3_mechanical.md |
+| Common-ground generality (2D, N = 8): sliding 62,255; NEPL 62,227 (subset; 99.95 %); ISL 19; chain: all 639 conformations, 26 % of single-component shapes | NUM | s3_generality.md, s3_cycle_compare.md |
+| Executable TOWER-ARM ↔ ARCH: NEPL 9 + 9 moves, every move with modelled actuator, power continuous, 8 parallel steps; SISL 6 moves of which 4 convex (face drive cannot execute); ISL impossible | NUM | s3_cycle_compare.md |
+| NEPL budgets: pins 9.4 MPa shear; contacts 0.015–0.16 Ω per face; hinge margin 1.6; landing speed ~2 m/s at every size (braking required); 145 nJ per move at 100 µm | MATH | s3_nepl_design.md |
+| 3D pivot vs sliding (3×3×3 exhaustive): pivot set ⊂ sliding set; 99.6 % (N = 5), 99.88 % (N = 6) | NUM | s3_generality3d.md |
+
+Nothing in this section is experimental. All literature numbers are snippet-level.

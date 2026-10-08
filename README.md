@@ -9,7 +9,31 @@
 
 Module sizes 10 mm → 1 mm → 100 µm → 10 µm are analysed throughout.
 
-## Session 2 audit — read this first ([AUDIT.md](AUDIT.md), [TRACKS.md](TRACKS.md))
+## Session 3 — architecture competition (read first: [ARCHITECTURE_COMPETITION.md](ARCHITECTURE_COMPETITION.md), [NEW_MECHANISMS.md](NEW_MECHANISMS.md))
+
+Evidence classes: MATH = mathematical derivation · NUM = numerical simulation · SNIPPET = literature seen only in search snippets · HYPOTHESIS = engineering hypothesis. **No experiments have been done.**
+
+- **Strongest surviving architecture: NEPL**, a Neighbour-actuated Electropermanent Pivoting Lattice.
+  - Stationary neighbours push and pull a passive module through 90° or 180° pivots using switched electropermanent magnets (EPMs).
+  - Pins carry shear; switchable magnetic circuits carry tension and clamp the electrical contacts.
+  - There are no sliding contacts.
+  - Torque margins (3D-derated): 36/16 at 300 µm, 4.5/2.0 at 100 µm, fails at ≤ 30 µm (NUM).
+  - In a common 2D test it reaches 99.95 % of the sliding-cube state space (NUM, bounded).
+  - It executes TOWER-ARM ↔ ARCH with every move physically modelled and power continuous (NUM).
+  - **Single most likely fatal flaw: no microfabricated switchable (semi-hard) magnet film has been found** (experiment E9).
+- **Strongest alternative:** ISL-PE (Track A; needs no new material, but sliding, sealed and shape-restricted). For a low active fraction: NEPL skin over passive voxels.
+- **Disproven or weakened:**
+  - neighbour-coil Lorentz drive (MATH);
+  - sliding magnetic reluctance steppers (friction-locked, NUM);
+  - rigid electrostatic zipping pivots (MATH);
+  - inchworms below 300 µm at ≤ 30 V (MATH);
+  - capillary mechanisms in open air;
+  - sliding-only architectures, since most moves in a real transformation are convex (NUM) and sliding life is ~10⁵ cycles (SNIPPET);
+  - anchored chains (26 % of shapes, NUM).
+- **Retracted:** session-1 N1 ("EPMs impossible below 1 mm"). EPMs are feasible in physics down to about 100 µm and limited by materials (MATH).
+- Files: [MAGNETIC_ACTUATION.md](MAGNETIC_ACTUATION.md), [MECHANICAL_ACTUATION.md](MECHANICAL_ACTUATION.md), [ALTERNATIVE_ARCHITECTURES.md](ALTERNATIVE_ARCHITECTURES.md), [GENERALITY.md](GENERALITY.md); code in `sims/s3/`.
+
+## Session 2 audit ([AUDIT.md](AUDIT.md), [TRACKS.md](TRACKS.md))
 
 Evidence classes: MATH = derivation or proof · NUM = simulation · EXP = experiment. **No experiments have been done in this project.**
 
