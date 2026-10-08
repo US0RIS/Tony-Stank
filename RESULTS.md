@@ -87,3 +87,17 @@ Runtime is about 15 s in total. The models are deterministic; the S6 random test
 | 3D pivot vs sliding (3×3×3 exhaustive): pivot set ⊂ sliding set; 99.6 % (N = 5), 99.88 % (N = 6) | NUM | s3_generality3d.md |
 
 Nothing in this section is experimental. All literature numbers are snippet-level.
+
+## Session 4 — NEPL physical-realizability audit (reproduce: `python3 sims/s4/<name>.py`; outputs `results/s4_*.md`, CAD in `results/s4_cad/`)
+
+| Result | Class | File |
+|---|---|---|
+| Session-3 100 µm margins reproduced exactly (8.92 / 3.97 in 2D before derate) | NUM | NEPL_FEASIBILITY.md |
+| FD magnetostatic solver validated against the session-3 charge model (0.94–1.00) and by an independent reviewer's energy-method solver (within 1 % grid-aligned; overstates by 2–12 % otherwise) | NUM | s4_pivot_real_100.md, INDEPENDENT_REVIEW.md |
+| Integrated 100 µm module: 108 components, 0 interferences; switchable magnet is only 3.3 % of the volume (2 bars of 12 × 4 × 58 µm per face) | NUM | s4_geometry_100.md |
+| Attached clamp with buildable switchable faces: 2.0 µN (0.2 kPa) at 100 µm, vs ~98 kPa assumed in session 3 | NUM | s4_demag_contacts.md, s4_gap_sensitivity.md |
+| Pivot worst margins at 100 µm: 0.022 (90°), 0.006 (180°); start torque/peel 0.06 / 0.05 | NUM | s4_pivot_real_100.md, s4_cycle_dynamics.md |
+| Coil (after R2 corrections): at 100 µm ≥ 1×10¹¹ A/m², drivers 6–11× too large, local storage ~2,900 module volumes | MATH + NUM | s4_switching.md |
+| Pin pattern: single pin/socket mates in 1 of 4 orientations; a chiral 4+4 pinwheel mates in all 4 but shrinks the bars to 9.5 µm | MATH | s4_pins.md |
+| Minimum size for a 2× humid start margin with CoP: 620–880 µm; with 10× lower adhesion: 200–280 µm | MATH from NUM | s4_verdict_numbers.md |
+| **Verdict: 100 µm D (infeasible under tested constraints); 300 µm C; ~0.6–1 mm B** | — | FEASIBILITY_VERDICT.md |

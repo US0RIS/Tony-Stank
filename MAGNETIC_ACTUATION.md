@@ -95,3 +95,11 @@ Margins are minimum torque over the whole swing divided by humid peel torque plu
 - Landing dynamics and braking.
 - Ferrous-dust accumulation.
 - Fatigue of pins and pole pieces under about 10⁶ landings.
+
+---
+
+> **Session-4 correction (FEASIBILITY_VERDICT.md):** the NEPL margins above (4.5 / 2.0 at 100 µm) and the ~100 kPa switchable attachment assumed face-normal 1 T magnets, which a switchable material cannot hold.
+> - With an integrated, buildable face (in-plane CoP bars, NiFe pole pieces, coils and pins all occupying space), the 100 µm margins are 0.022 / 0.006 and the clamp is 0.2 kPa.
+> - Verdict: 100 µm infeasible (D), 300 µm C, ~0.6–1 mm B.
+>
+> The text above is preserved as the historical session-3 record.

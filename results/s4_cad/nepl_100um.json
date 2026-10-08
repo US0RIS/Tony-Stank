@@ -1,0 +1,1406 @@
+[
+{
+"name": "z-:cover",
+"kind": "insulation",
+"box": [
+13.0,
+87.0,
+13.0,
+87.0,
+0,
+0.5
+],
+"material": "SiO2"
+},
+{
+"name": "z-:pole1",
+"kind": "pole",
+"box": [
+13.0,
+21.0,
+28.5,
+69.5,
+1.0,
+13.0
+],
+"material": "NiFe"
+},
+{
+"name": "z-:pole2",
+"kind": "pole",
+"box": [
+79.0,
+87.0,
+28.5,
+69.5,
+1.0,
+13.0
+],
+"material": "NiFe"
+},
+{
+"name": "z-:bar0",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+32.5,
+44.5,
+5.0,
+9.0
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "z-:coil0",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+28.5,
+48.5,
+1.0,
+13.0
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "z-:bar1",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+53.5,
+65.5,
+5.0,
+9.0
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "z-:coil1",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+49.5,
+69.5,
+1.0,
+13.0
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "z-:pin",
+"kind": "pin",
+"box": [
+43.0,
+57.0,
+13.5,
+27.5,
+-8.0,
+4.0
+],
+"material": "Si (DRIE)"
+},
+{
+"name": "z-:socket",
+"kind": "socket",
+"box": [
+42.0,
+58.0,
+70.5,
+86.5,
+0,
+9.0
+],
+"material": "void"
+},
+{
+"name": "z-:pad0",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+13.5,
+21.5,
+0,
+1.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z-:pad1",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+13.5,
+21.5,
+0,
+1.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z-:pad2",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+74.5,
+82.5,
+0,
+1.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z-:pad3",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+74.5,
+82.5,
+0,
+1.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z-:via",
+"kind": "routing",
+"box": [
+14.0,
+20.0,
+71.5,
+74.0,
+1.0,
+12.0
+],
+"material": "Cu via bundle"
+},
+{
+"name": "z+:cover",
+"kind": "insulation",
+"box": [
+13.0,
+87.0,
+13.0,
+87.0,
+99.5,
+100.0
+],
+"material": "SiO2"
+},
+{
+"name": "z+:pole1",
+"kind": "pole",
+"box": [
+13.0,
+21.0,
+28.5,
+69.5,
+87.0,
+99.0
+],
+"material": "NiFe"
+},
+{
+"name": "z+:pole2",
+"kind": "pole",
+"box": [
+79.0,
+87.0,
+28.5,
+69.5,
+87.0,
+99.0
+],
+"material": "NiFe"
+},
+{
+"name": "z+:bar0",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+32.5,
+44.5,
+91.0,
+95.0
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "z+:coil0",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+28.5,
+48.5,
+87.0,
+99.0
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "z+:bar1",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+53.5,
+65.5,
+91.0,
+95.0
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "z+:coil1",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+49.5,
+69.5,
+87.0,
+99.0
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "z+:pin",
+"kind": "pin",
+"box": [
+43.0,
+57.0,
+13.5,
+27.5,
+96.0,
+108.0
+],
+"material": "Si (DRIE)"
+},
+{
+"name": "z+:socket",
+"kind": "socket",
+"box": [
+42.0,
+58.0,
+70.5,
+86.5,
+91.0,
+100.0
+],
+"material": "void"
+},
+{
+"name": "z+:pad0",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+13.5,
+21.5,
+99.0,
+100.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z+:pad1",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+13.5,
+21.5,
+99.0,
+100.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z+:pad2",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+74.5,
+82.5,
+99.0,
+100.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z+:pad3",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+74.5,
+82.5,
+99.0,
+100.0
+],
+"material": "Au on Ti"
+},
+{
+"name": "z+:via",
+"kind": "routing",
+"box": [
+14.0,
+20.0,
+71.5,
+74.0,
+88.0,
+99.0
+],
+"material": "Cu via bundle"
+},
+{
+"name": "y-:cover",
+"kind": "insulation",
+"box": [
+13.0,
+87.0,
+0,
+0.5,
+13.0,
+87.0
+],
+"material": "SiO2"
+},
+{
+"name": "y-:pole1",
+"kind": "pole",
+"box": [
+13.0,
+21.0,
+1.0,
+13.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "y-:pole2",
+"kind": "pole",
+"box": [
+79.0,
+87.0,
+1.0,
+13.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "y-:bar0",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+5.0,
+9.0,
+32.5,
+44.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "y-:coil0",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+1.0,
+13.0,
+28.5,
+48.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "y-:bar1",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+5.0,
+9.0,
+53.5,
+65.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "y-:coil1",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+1.0,
+13.0,
+49.5,
+69.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "y-:pin",
+"kind": "pin",
+"box": [
+43.0,
+57.0,
+-8.0,
+4.0,
+13.5,
+27.5
+],
+"material": "Si (DRIE)"
+},
+{
+"name": "y-:socket",
+"kind": "socket",
+"box": [
+42.0,
+58.0,
+0,
+9.0,
+70.5,
+86.5
+],
+"material": "void"
+},
+{
+"name": "y-:pad0",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+0,
+1.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y-:pad1",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+0,
+1.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y-:pad2",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+0,
+1.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y-:pad3",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+0,
+1.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y-:via",
+"kind": "routing",
+"box": [
+14.0,
+20.0,
+1.0,
+12.0,
+71.5,
+74.0
+],
+"material": "Cu via bundle"
+},
+{
+"name": "y+:cover",
+"kind": "insulation",
+"box": [
+13.0,
+87.0,
+99.5,
+100.0,
+13.0,
+87.0
+],
+"material": "SiO2"
+},
+{
+"name": "y+:pole1",
+"kind": "pole",
+"box": [
+13.0,
+21.0,
+87.0,
+99.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "y+:pole2",
+"kind": "pole",
+"box": [
+79.0,
+87.0,
+87.0,
+99.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "y+:bar0",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+91.0,
+95.0,
+32.5,
+44.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "y+:coil0",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+87.0,
+99.0,
+28.5,
+48.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "y+:bar1",
+"kind": "magnet",
+"box": [
+21.0,
+79.0,
+91.0,
+95.0,
+53.5,
+65.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "y+:coil1",
+"kind": "coil",
+"box": [
+23.0,
+77.0,
+87.0,
+99.0,
+49.5,
+69.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "y+:pin",
+"kind": "pin",
+"box": [
+43.0,
+57.0,
+96.0,
+108.0,
+13.5,
+27.5
+],
+"material": "Si (DRIE)"
+},
+{
+"name": "y+:socket",
+"kind": "socket",
+"box": [
+42.0,
+58.0,
+91.0,
+100.0,
+70.5,
+86.5
+],
+"material": "void"
+},
+{
+"name": "y+:pad0",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+99.0,
+100.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y+:pad1",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+99.0,
+100.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y+:pad2",
+"kind": "pad",
+"box": [
+14.0,
+22.0,
+99.0,
+100.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y+:pad3",
+"kind": "pad",
+"box": [
+78.0,
+86.0,
+99.0,
+100.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "y+:via",
+"kind": "routing",
+"box": [
+14.0,
+20.0,
+88.0,
+99.0,
+71.5,
+74.0
+],
+"material": "Cu via bundle"
+},
+{
+"name": "x-:cover",
+"kind": "insulation",
+"box": [
+0,
+0.5,
+13.0,
+87.0,
+13.0,
+87.0
+],
+"material": "SiO2"
+},
+{
+"name": "x-:pole1",
+"kind": "pole",
+"box": [
+1.0,
+13.0,
+13.0,
+21.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "x-:pole2",
+"kind": "pole",
+"box": [
+1.0,
+13.0,
+79.0,
+87.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "x-:bar0",
+"kind": "magnet",
+"box": [
+5.0,
+9.0,
+21.0,
+79.0,
+32.5,
+44.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "x-:coil0",
+"kind": "coil",
+"box": [
+1.0,
+13.0,
+23.0,
+77.0,
+28.5,
+48.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "x-:bar1",
+"kind": "magnet",
+"box": [
+5.0,
+9.0,
+21.0,
+79.0,
+53.5,
+65.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "x-:coil1",
+"kind": "coil",
+"box": [
+1.0,
+13.0,
+23.0,
+77.0,
+49.5,
+69.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "x-:pin",
+"kind": "pin",
+"box": [
+-8.0,
+4.0,
+43.0,
+57.0,
+13.5,
+27.5
+],
+"material": "Si (DRIE)"
+},
+{
+"name": "x-:socket",
+"kind": "socket",
+"box": [
+0,
+9.0,
+42.0,
+58.0,
+70.5,
+86.5
+],
+"material": "void"
+},
+{
+"name": "x-:pad0",
+"kind": "pad",
+"box": [
+0,
+1.0,
+14.0,
+22.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x-:pad1",
+"kind": "pad",
+"box": [
+0,
+1.0,
+78.0,
+86.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x-:pad2",
+"kind": "pad",
+"box": [
+0,
+1.0,
+14.0,
+22.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x-:pad3",
+"kind": "pad",
+"box": [
+0,
+1.0,
+78.0,
+86.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x-:via",
+"kind": "routing",
+"box": [
+1.0,
+12.0,
+14.0,
+20.0,
+71.5,
+74.0
+],
+"material": "Cu via bundle"
+},
+{
+"name": "x+:cover",
+"kind": "insulation",
+"box": [
+99.5,
+100.0,
+13.0,
+87.0,
+13.0,
+87.0
+],
+"material": "SiO2"
+},
+{
+"name": "x+:pole1",
+"kind": "pole",
+"box": [
+87.0,
+99.0,
+13.0,
+21.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "x+:pole2",
+"kind": "pole",
+"box": [
+87.0,
+99.0,
+79.0,
+87.0,
+28.5,
+69.5
+],
+"material": "NiFe"
+},
+{
+"name": "x+:bar0",
+"kind": "magnet",
+"box": [
+91.0,
+95.0,
+21.0,
+79.0,
+32.5,
+44.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "x+:coil0",
+"kind": "coil",
+"box": [
+87.0,
+99.0,
+23.0,
+77.0,
+28.5,
+48.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "x+:bar1",
+"kind": "magnet",
+"box": [
+91.0,
+95.0,
+21.0,
+79.0,
+53.5,
+65.5
+],
+"material": "CoP (semi-hard)"
+},
+{
+"name": "x+:coil1",
+"kind": "coil",
+"box": [
+87.0,
+99.0,
+23.0,
+77.0,
+49.5,
+69.5
+],
+"material": "Cu + polyimide"
+},
+{
+"name": "x+:pin",
+"kind": "pin",
+"box": [
+96.0,
+108.0,
+43.0,
+57.0,
+13.5,
+27.5
+],
+"material": "Si (DRIE)"
+},
+{
+"name": "x+:socket",
+"kind": "socket",
+"box": [
+91.0,
+100.0,
+42.0,
+58.0,
+70.5,
+86.5
+],
+"material": "void"
+},
+{
+"name": "x+:pad0",
+"kind": "pad",
+"box": [
+99.0,
+100.0,
+14.0,
+22.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x+:pad1",
+"kind": "pad",
+"box": [
+99.0,
+100.0,
+78.0,
+86.0,
+13.5,
+21.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x+:pad2",
+"kind": "pad",
+"box": [
+99.0,
+100.0,
+14.0,
+22.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x+:pad3",
+"kind": "pad",
+"box": [
+99.0,
+100.0,
+78.0,
+86.0,
+74.5,
+82.5
+],
+"material": "Au on Ti"
+},
+{
+"name": "x+:via",
+"kind": "routing",
+"box": [
+88.0,
+99.0,
+14.0,
+20.0,
+71.5,
+74.0
+],
+"material": "Cu via bundle"
+},
+{
+"name": "edge000:knuckle",
+"kind": "hinge",
+"box": [
+12.0,
+88.0,
+0,
+10.0,
+0,
+10.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge001:knuckle",
+"kind": "hinge",
+"box": [
+12.0,
+88.0,
+0,
+10.0,
+90.0,
+100.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge010:knuckle",
+"kind": "hinge",
+"box": [
+12.0,
+88.0,
+90.0,
+100.0,
+0,
+10.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge011:knuckle",
+"kind": "hinge",
+"box": [
+12.0,
+88.0,
+90.0,
+100.0,
+90.0,
+100.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge100:knuckle",
+"kind": "hinge",
+"box": [
+0,
+10.0,
+12.0,
+88.0,
+0,
+10.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge101:knuckle",
+"kind": "hinge",
+"box": [
+0,
+10.0,
+12.0,
+88.0,
+90.0,
+100.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge110:knuckle",
+"kind": "hinge",
+"box": [
+90.0,
+100.0,
+12.0,
+88.0,
+0,
+10.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge111:knuckle",
+"kind": "hinge",
+"box": [
+90.0,
+100.0,
+12.0,
+88.0,
+90.0,
+100.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge200:knuckle",
+"kind": "hinge",
+"box": [
+0,
+10.0,
+0,
+10.0,
+12.0,
+88.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge201:knuckle",
+"kind": "hinge",
+"box": [
+0,
+10.0,
+90.0,
+100.0,
+12.0,
+88.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge210:knuckle",
+"kind": "hinge",
+"box": [
+90.0,
+100.0,
+0,
+10.0,
+12.0,
+88.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "edge211:knuckle",
+"kind": "hinge",
+"box": [
+90.0,
+100.0,
+90.0,
+100.0,
+12.0,
+88.0
+],
+"material": "Si + edge contact (Au)"
+},
+{
+"name": "corner000",
+"kind": "structure",
+"box": [
+0,
+12.0,
+0,
+12.0,
+0,
+12.0
+],
+"material": "Si"
+},
+{
+"name": "corner001",
+"kind": "structure",
+"box": [
+0,
+12.0,
+0,
+12.0,
+88.0,
+100.0
+],
+"material": "Si"
+},
+{
+"name": "corner010",
+"kind": "structure",
+"box": [
+0,
+12.0,
+88.0,
+100.0,
+0,
+12.0
+],
+"material": "Si"
+},
+{
+"name": "corner011",
+"kind": "structure",
+"box": [
+0,
+12.0,
+88.0,
+100.0,
+88.0,
+100.0
+],
+"material": "Si"
+},
+{
+"name": "corner100",
+"kind": "structure",
+"box": [
+88.0,
+100.0,
+0,
+12.0,
+0,
+12.0
+],
+"material": "Si"
+},
+{
+"name": "corner101",
+"kind": "structure",
+"box": [
+88.0,
+100.0,
+0,
+12.0,
+88.0,
+100.0
+],
+"material": "Si"
+},
+{
+"name": "corner110",
+"kind": "structure",
+"box": [
+88.0,
+100.0,
+88.0,
+100.0,
+0,
+12.0
+],
+"material": "Si"
+},
+{
+"name": "corner111",
+"kind": "structure",
+"box": [
+88.0,
+100.0,
+88.0,
+100.0,
+88.0,
+100.0
+],
+"material": "Si"
+},
+{
+"name": "core:cmos_die_1",
+"kind": "electronics",
+"box": [
+13.0,
+87.0,
+13.0,
+87.0,
+42.0,
+49.0
+],
+"material": "CMOS (thinned)"
+},
+{
+"name": "core:cmos_die_2",
+"kind": "electronics",
+"box": [
+13.0,
+87.0,
+13.0,
+87.0,
+51.0,
+58.0
+],
+"material": "CMOS (thinned)"
+},
+{
+"name": "core:trench_cap",
+"kind": "capacitor",
+"box": [
+13.0,
+87.0,
+13.0,
+87.0,
+13.0,
+40.0
+],
+"material": "deep-trench Si capacitor"
+},
+{
+"name": "core:routing",
+"kind": "routing",
+"box": [
+13.0,
+87.0,
+13.0,
+87.0,
+60.0,
+87.0
+],
+"material": "TSV / redistribution"
+}
+]

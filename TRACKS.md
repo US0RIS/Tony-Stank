@@ -81,3 +81,22 @@ Each requirement below is a quantitative target derived in `sims/track_b.py`, AU
 4. 300 µm.
 
 Each step is falsifiable by E10 and E12.
+
+---
+
+## Session-4 revision (FEASIBILITY_VERDICT.md)
+
+**NEPL is not realisable at 100 µm** with thin-film switchable magnets: verdict D (flux starvation against adhesion).
+- At 300 µm it requires specific advances: verdict C.
+- At about 0.6–1 mm it is plausible but needs experiments: verdict B.
+
+**Track A** (wearable demonstrator): a 1 mm NEPL is now a candidate alongside ISL-PE. Its first experiments are:
+- **E9′:** a CoP-bar EPM face at 1 mm. Measure loop squareness, reversal time, attached clamp vs the FD prediction (~200 µN at 1 mm by similarity), and cross-talk creep.
+- **E10′:** pivot torque profile at 1 mm vs `cycle_dynamics.py`.
+- **E15:** a departure hinge compatible with identical modules (chiral edge pattern).
+
+**Track B** (≤ 100 µm): magnetic body-force actuation of switchable-attachment lattices is now **excluded at 100 µm**. The required Jr·sq (3.2 T humid) exceeds every known material.
+- Remaining routes must change the force law: surface-force actuators that scale with contact area, such as the electrostatic face drive (sealed) or electroadhesion/electrostatic clamps.
+- Or they must remove the adhesion barrier: sealed low-humidity environments, engineered sub-10 nN contacts.
+- Or they must use externally assisted actuation, such as a global field from the garment.
+- Session 3's "strongest surviving architecture" ranking is **revised**: NEPL survives only at ≥ ~0.6 mm.

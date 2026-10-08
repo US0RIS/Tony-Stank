@@ -9,7 +9,26 @@
 
 Module sizes 10 mm → 1 mm → 100 µm → 10 µm are analysed throughout.
 
-## Session 3 — architecture competition (read first: [ARCHITECTURE_COMPETITION.md](ARCHITECTURE_COMPETITION.md), [NEW_MECHANISMS.md](NEW_MECHANISMS.md))
+## Session 4 — NEPL feasibility audit (read first: [FEASIBILITY_VERDICT.md](FEASIBILITY_VERDICT.md))
+
+**Verdict: a 100 µm NEPL module is physically infeasible under the tested constraints (D).**
+- Thin-film switchable magnets inside an integrated 100 µm face deliver a 0.2 kPa clamp and 2–6 % of the torque needed to peel off a humid contact (NUMERICAL, independently reviewed).
+- Recovering it would need a 3.2 T switchable material, above every known material.
+- 300 µm: C. About 0.6–1 mm: B (plausible, needs experiments).
+
+Supporting files:
+- [NEPL_FEASIBILITY.md](NEPL_FEASIBILITY.md) (assumption register)
+- [MATERIALS_DATABASE.md](MATERIALS_DATABASE.md)
+- [INTEGRATED_MODULE_DESIGN.md](INTEGRATED_MODULE_DESIGN.md)
+- [MAGNETIC_CIRCUIT.md](MAGNETIC_CIRCUIT.md)
+- [SWITCHING_AND_THERMALS.md](SWITCHING_AND_THERMALS.md)
+- [MECHANICAL_CYCLE.md](MECHANICAL_CYCLE.md)
+- [FABRICATION_PLAN.md](FABRICATION_PLAN.md)
+- [INDEPENDENT_REVIEW.md](INDEPENDENT_REVIEW.md)
+
+Code is in `sims/s4/`; CAD and drawings in `results/s4_cad/`.
+
+## Session 3 — architecture competition (NEPL claims superseded by session 4) (read first: [ARCHITECTURE_COMPETITION.md](ARCHITECTURE_COMPETITION.md), [NEW_MECHANISMS.md](NEW_MECHANISMS.md))
 
 Evidence classes: MATH = mathematical derivation · NUM = numerical simulation · SNIPPET = literature seen only in search snippets · HYPOTHESIS = engineering hypothesis. **No experiments have been done.**
 
